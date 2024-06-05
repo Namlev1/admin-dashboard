@@ -4,7 +4,7 @@
     --white-color: #FFFFFF;
     --grey-background: #E2E8F0;
     --yellow-border: #F0B429;
-/*  TODO: font  */
+    font-family: Roboto, Arial, sans-serif;
 }
 
 body{
@@ -25,10 +25,21 @@ div{
 }
 
 .sidebar{
+    padding: 16px;
+    background-color: var(--blue-color);
     grid-row: span 3;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: var(--blue-color);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 1fr 4fr;
+}
+
+.span-column{
+    grid-column: span 2;
+}
+
+.sidebar > img{
+    width: 56px;
+    height: auto;
 }
 
 .top-bar{
