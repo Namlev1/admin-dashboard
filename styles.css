@@ -3,6 +3,13 @@
 /*  TODO: font  */
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
 div{
     border: 1px solid red;
 }
@@ -10,5 +17,21 @@ div{
 .main{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: minmax(100px, auto) minmax(200px, auto) 1fr;
+    grid-template-rows: minmax(100px, 1fr) minmax(200px, 1fr) 1fr;
+}
+
+.sidebar{
+    grid-row: span 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.top-bar{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.header{
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
 }
