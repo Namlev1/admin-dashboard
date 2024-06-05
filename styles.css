@@ -1,5 +1,9 @@
 :root{
     margin: 0;
+    --blue-color: #1992D4;
+    --white-color: #FFFFFF;
+    --grey-background: #E2E8F0;
+    --yellow-border: #F0B429;
 /*  TODO: font  */
 }
 
@@ -11,7 +15,7 @@ body{
 }
 
 div{
-    border: 1px solid red;
+    border: 1px solid var(--blue-color);
 }
 
 .main{
@@ -24,6 +28,7 @@ div{
     grid-row: span 3;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: var(--blue-color);
 }
 
 .top-bar{
@@ -34,4 +39,8 @@ div{
 .header{
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+}
+
+.projects{
+    background-color: var(--grey-background);
 }
