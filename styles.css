@@ -5,6 +5,7 @@
     --grey-background: #E2E8F0;
     --dark-grey-background: #bec2c9;
     --yellow-border: #F0B429;
+    --box-text-color: #717171;
     font-family: Roboto, Arial, sans-serif;
 }
 
@@ -12,15 +13,10 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    width: 100vw;
 }
 
 h1 {
     margin: 0;
-}
-
-div {
-    border: 1px solid var(--blue-color);
 }
 
 img {
@@ -49,7 +45,7 @@ img {
     background-color: var(--blue-color);
     grid-row: span 2;
     display: grid;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: 100px 50px repeat(6, 60px) 50px repeat(3, 60px);
     grid-template-columns: 1fr 3fr;
     align-items: center;
     color: var(--white-color);
@@ -95,10 +91,112 @@ input[type="search"]:hover, input[type="search"]:focus {
 }
 
 .welcome-bar {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-bar button{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    padding: 12px 24px;
+    border-radius: 9999px;
+    border: none;
+}
+
+.welcome-avatar {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+}
+
+.welcome-avatar h3{
+    margin: 0;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .projects {
     background-color: var(--grey-background);
+    padding: 16px 32px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 3fr;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    gap: 2rem;
+}
+
+.projects h2{
+    font-weight: 500;
+    margin: 1rem 0 0 0;
+}
+
+.projects-label{
+    grid-column: span 2;
+}
+
+.announcements{
+    grid-row: 1/-1;
+    grid-column: -1 / -2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.announcements > h2 {
+    height: 42px;
+}
+
+.box{
+    background-color: var(--white-color);
+    border-radius: 12px;
+    padding: 15px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.yellow-border{
+    border-left: 12px solid var(--yellow-border);
+}
+
+.box h2{
+    margin: 4px 0;
+}
+
+.box p{
+    margin: 0;
+    color: var(--box-text-color) ;
+}
+
+.project-options{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+}
+
+.announcement-list{
+    background-color: var(--dark-grey-background);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+}
+
+.announcement{
+    background-color: var(--white-color);
+    padding: 16px 0;
+}
+
+.announcement h3{
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+.announcements .box{
+    padding: 0 32px;
 }
