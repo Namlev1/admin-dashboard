@@ -49,6 +49,7 @@ img {
     grid-template-columns: 1fr 3fr;
     align-items: center;
     color: var(--white-color);
+    z-index: 2;
 }
 
 .sidebar > img {
@@ -67,6 +68,8 @@ img {
     padding: 24px 48px;
     display: grid;
     grid-template-rows: 2fr 3fr;
+    z-index: 1;
+    box-shadow: 0 -16px 16px 12px rgba(66, 68, 90, 1);
 }
 
 .top-bar {
@@ -159,6 +162,7 @@ input[type="search"]:hover, input[type="search"]:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 8px 8px 11px -10px rgba(66, 68, 90, 1);
 }
 
 .yellow-border{
@@ -199,4 +203,8 @@ input[type="search"]:hover, input[type="search"]:focus {
 
 .announcements .box{
     padding: 0 32px;
+}
+
+.trending{
+    margin-top: 0;
 }
