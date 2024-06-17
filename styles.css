@@ -208,3 +208,16 @@ input[type="search"]:hover, input[type="search"]:focus {
 .trending{
     margin-top: 0;
 }
+
+.box.profiles{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 24px 28px;
+    gap: 16px;
+    align-items: center;
+}
+
+.box .profile-id{
+    color: black;
+    font-weight: 500;
+}
