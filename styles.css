@@ -153,6 +153,7 @@ input[type="search"]:hover, input[type="search"]:focus {
 
 .announcements > h2 {
     height: 42px;
+    margin-bottom: 18px;
 }
 
 .box{
